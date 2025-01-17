@@ -1,0 +1,119 @@
+#app:
+#  name: loan-strategy-analyzer
+#  version: '1.0.0'
+#  environment: development
+#
+#openai:
+#  model: gpt-4-1106-preview
+#  max_tokens: 4000
+#  temperature: 0.7
+#  timeout_seconds: 30
+#
+#data:
+#  input_path: data/raw
+#  processed_path: data/processed
+#  date_format: '%Y-%m-%d'
+#  numeric_fields:
+#    - applied_amount
+#    - income
+#    - interest_rate
+#  categorical_fields:
+#    - loan_type
+#    - occupation
+#    - status
+#  loan_types:
+#    - MSME
+#    - Personal
+#    - Home
+#    - Gold
+#    - Asset
+#
+#analysis:
+#  income_brackets:
+#    low: 30000
+#    medium: 60000
+#    high: 100000
+#  min_applications: 50
+#  lookback_period_days: 365
+#  confidence_threshold: 0.7
+#  market_segments:
+#    - Salaried
+#    - Self-Employed
+#    - Business
+#    - Professional
+#  risk_thresholds:
+#    concentration: 0.25
+#    volatility: 0.15
+#
+#api:
+#  host: '0.0.0.0'
+#  port: 8000
+
+#  debug: true
+#  rate_limit: 100
+#  timeout_seconds: 30
+#
+
+
+
+
+# config/config.yaml
+app:
+  name: "loan-strategy-analyzer"
+  version: "1.0.0"
+  environment: "development"
+
+logging:
+  level: "INFO"
+  file: "logs/app.log"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+
+data:
+  required_columns:
+    - application_id
+    - customer_id
+    - pincode
+    - applied_amount
+    - loan_type
+    - application_date
+    - income
+    - occupation
+    - status
+
+  loan_types:
+    - MSME
+    - Personal
+    - Home
+    - Gold
+    - Asset
+
+analysis:
+  lookback_period_days: 90
+  min_applications: 50
+  high_potential_threshold: 0.7
+  risk_thresholds:
+    concentration: 0.25
+    volatility: 0.15
+  income_brackets:
+    low: 30000
+    medium: 60000
+    high: 100000
+
+openai:
+  model: "gpt-4-1106-preview"
+  temperature: 0.7
+  max_tokens: 4000
+  timeout_seconds: 30
+
+api:
+  host: "0.0.0.0"
+  port: 8000
+  debug: true
+  cors_origins: ["*"]
+  rate_limit: 100
+  timeout_seconds: 30
+
+# .env
+#OPENAI_API_KEY=your-api-key-here
+#ENVIRONMENT=development
+#LOG_LEVEL=INFO
