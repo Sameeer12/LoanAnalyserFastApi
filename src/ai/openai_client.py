@@ -9,8 +9,7 @@ from dotenv import load_dotenv
 logger = logging.getLogger(__name__)
 logging.basicConfig(level=logging.INFO)
 
-API_KEY = "sk-w2vmuOkV3gXjPNNzs74c4-cMOWxRp7UezE__QYNXP8T3BlbkFJ7HqG4zGifgy-AaPyIGdELNddadbn1WlqMlkcBEmIMA"
-openai.api_key = API_KEY
+
 dotenv_path = os.path.join(os.path.dirname(__file__), ".env")
 
 # Load the .env file
