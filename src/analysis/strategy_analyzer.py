@@ -34,8 +34,8 @@ class StrategyAnalyzer:
 
     def _get_recent_data(self, df: pd.DataFrame) -> pd.DataFrame:
         """Get recent data based on lookback period"""
-        cutoff_date = df['application_date'].max() - timedelta(days=self.lookback_days)
-        return df[df['application_date'] > cutoff_date]
+        cutoff_date = df['loan_start_date'].max() - timedelta(days=self.lookback_days)
+        return df[df['loan_start_date'] > cutoff_date]
 
     def _identify_target_segments(self, df: pd.DataFrame, recent_data: pd.DataFrame) -> List[Dict]:
         """Identify and prioritize target segments"""

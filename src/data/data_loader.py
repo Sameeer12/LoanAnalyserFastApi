@@ -25,7 +25,7 @@ class DataLoader:
         """Initial data preprocessing"""
         # Convert date columns
         date_format = self.config['data']['date_format']
-        df['application_date'] = pd.to_datetime(df['application_date'], format=date_format)
+        df['loan_start_date'] = pd.to_datetime(df['loan_start_date'], format=date_format)
 
         # Handle missing values
         numeric_fields = self.config['data']['numeric_fields']

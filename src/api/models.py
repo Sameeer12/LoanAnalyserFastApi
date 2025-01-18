@@ -12,7 +12,7 @@ class LoanApplication(BaseModel):
     pincode: str
     applied_amount: float
     loan_type: str
-    application_date: str
+    loan_start_date: str
     income: float
     occupation: str
     status: str

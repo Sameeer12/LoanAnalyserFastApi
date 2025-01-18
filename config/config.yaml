@@ -75,7 +75,7 @@ data:
     - pincode
     - applied_amount
     - loan_type
-    - application_date
+    - loan_start_date
     - income
     - occupation
     - status
