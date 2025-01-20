@@ -30,3 +30,8 @@ class StrategyResponse(BaseModel):
     pincode: str
     market_analysis: Dict
     strategy_recommendations: Dict
+
+class PincodeData(BaseModel):
+    pincode: str
+    count: int
+    metrics: Dict[str, float]

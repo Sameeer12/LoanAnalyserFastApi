@@ -1,3 +1,7 @@
+import asyncio
+
+import openai
+import pandas as pd
 import logging
 import os
 
@@ -7,6 +11,8 @@ from fastapi import FastAPI
 from starlette.middleware.cors import CORSMiddleware
 
 from src.api.routes import config, router
+from src.data.data_generator import DataGenerator
+from src.services.loan_strategy_app import LoanStrategyApp
 
 # Load environment variables
 dotenv_path = os.path.join(os.path.dirname(__file__), ".env")
@@ -21,33 +27,39 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 #
-# async def main():
-#     try:
-#         # Initialize application
-#         load_dotenv()
-#         app = LoanStrategyApp()
-#         data_generator = DataGenerator()
-#         # data_generator.generate_csv_data()
-#         # Load loan data
-#         logger.info("Loading loan data...")
-#         loan_data = pd.read_csv("data/loan_applications.csv")
-#
-#         # Analyze specific pincode
-#         pincode = '110080'
-#         logger.info(f"Analyzing pincode {pincode}...")
-#         results = await app.analyze_pincode(loan_data, pincode)
-#
-#         # Save results
-#         output_path = "output/analysis_results.yaml"
-#         logger.info(f"Saving results to {output_path}...")
-#
-#         os.makedirs(os.path.dirname(output_path), exist_ok=True)
-#         with open(output_path, 'w') as f:
-#             yaml.dump(results, f, default_flow_style=False)
-#
-#     except Exception as e:
-#         logger.error(f"Error in main execution: {e}")
-#         raise
+async def main():
+    try:
+        # Initialize application
+        load_dotenv()
+        # app = LoanStrategyApp()
+        data_generator = DataGenerator()
+        data_generator.generate_csv_data()
+
+        models = openai.models.list()
+
+        # Print the model names
+        for model in models['data']:
+            print(model['id'])
+        # Load loan data
+        # logger.info("Loading loan data...")
+        loan_data = pd.read_csv("data/loan_applications.csv")
+
+        # Analyze specific pincode
+        pincode = '110080'
+        logger.info(f"Analyzing pincode {pincode}...")
+        results = await LoanStrategyApp().analyze_pincode(loan_data, pincode)
+
+        # Save results
+        output_path = "output/analysis_results.yaml"
+        logger.info(f"Saving results to {output_path}...")
+
+        os.makedirs(os.path.dirname(output_path), exist_ok=True)
+        # with open(output_path, 'w') as f:
+        #     yaml.dump(results, f, default_flow_style=False)
+
+    except Exception as e:
+        logger.error(f"Error in main execution: {e}")
+        raise
 
 # Initialize the FastAPI app
 app = FastAPI(
@@ -66,11 +78,10 @@ app.add_middleware(
 app.include_router(router, prefix="/api")
 
 if __name__ == "__main__":
+    asyncio.run(main())
     uvicorn.run(app, host="0.0.0.0", port=8000)
-    # models = openai.models.list()
-    #
-    # # Print the model names
-    # for model in models['data']:
-    #     print(model['id'])
+    # app = LoanStrategyApp()
+    # data_generator = DataGenerator()
+
     # print(f"open api key: {api_key}")
     # asyncio.run(main())

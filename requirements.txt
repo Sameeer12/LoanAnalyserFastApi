@@ -1,14 +1,14 @@
 # Core dependencies
-pandas         # Compatible with Python 3.12
+pandas
 numpy         # Compatible with Python 3.12
-python-dotenv    # Environment variable management
-pyyaml         # YAML parsing and serialization
-openai        # OpenAI API client
+python-dotenv
+pyyaml
+openai
 
 # API and web
-fastapi       # Stable version for Python 3.12
-uvicorn      # Compatible ASGI server for FastAPI
-pydantic    # Stable version for Python 3.12
+fastapi
+uvicorn
+pydantic
 
 # Data processing
 scikit-learn     # Compatible with Python 3.12
@@ -23,3 +23,6 @@ flake8        # Compatible code linting tool
 # Visualization
 plotly        # Data visualization library compatible with Python 3.12
 Faker
+
+starlette
+setuptools

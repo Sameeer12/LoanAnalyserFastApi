@@ -88,7 +88,7 @@ data:
     - Asset
 
 analysis:
-  lookback_period_days: 90
+  lookback_period_days: 185
   min_applications: 50
   high_potential_threshold: 0.7
   risk_thresholds:
