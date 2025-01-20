@@ -35,11 +35,11 @@ async def main():
         data_generator = DataGenerator()
         data_generator.generate_csv_data()
 
-        models = openai.models.list()
+        # models = openai.models.list()
 
         # Print the model names
-        for model in models['data']:
-            print(model['id'])
+        # for model in models['data']:
+        #     print(model['id'])
         # Load loan data
         # logger.info("Loading loan data...")
         loan_data = pd.read_csv("data/loan_applications.csv")
