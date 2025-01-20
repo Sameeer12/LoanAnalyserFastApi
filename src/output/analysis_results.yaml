@@ -1,261 +1,260 @@
 analysis:
   demographic_insights:
-    avg_income: 3517393.206349206
+    avg_income: 2780520.9411764704
     income_distribution:
-      high: 16
-      low: 16
-      medium: 31
-    median_income: 1530679.0
+      high: 13
+      low: 13
+      medium: 25
+    median_income: 1432476.0
     occupation_distribution:
-      Business Owner: 7
-      Retired: 5
-      Salaried: 33
-      Self-Employed: 10
-      Student: 8
+      Business Owner: 9
+      Retired: 1
+      Salaried: 32
+      Self-Employed: 5
+      Student: 4
     temporal_trends:
       2023-05: 1
+      2023-06: 1
+      2023-07: 1
       2023-08: 1
-      2023-09: 2
+      2023-09: 3
       2023-10: 1
-      2024-02: 3
-      2024-03: 3
+      2023-12: 2
       2024-04: 1
       2024-05: 1
-      2024-07: 2
-      2024-08: 1
       2024-09: 1
-      2024-12: 4
-    total_applicants: 63
-    unique_customers: 62
+      2024-11: 2
+      2024-12: 1
+    total_applicants: 51
+    unique_customers: 50
   loan_patterns:
     amount_metrics:
-      max: 49942902.0
-      mean: 12932201.53968254
-      median: 7663863.0
-      min: 327607.0
+      max: 46689355.0
+      mean: 11129375.11764706
+      median: 8657376.0
+      min: 272416.0
       quartiles:
-        '0.25': 4740967.5
-        '0.5': 7663863.0
-        '0.75': 16015811.5
-      total: 814728697.0
+        '0.25': 3007018.5
+        '0.5': 8657376.0
+        '0.75': 16191110.5
+      total: 567598131.0
     loan_type_distribution:
       Asset: 1
-      Education: 11
+      Education: 4
       Gold: 2
-      Home: 21
-      MSME: 14
+      Home: 23
+      MSME: 7
       Personal: 14
     loan_type_patterns:
       Asset:
-        avg_amount: 30443923.0
+        avg_amount: 6711718.0
         count: 1
-        median_amount: 30443923.0
-        total_amount: 30443923.0
+        median_amount: 6711718.0
+        total_amount: 6711718.0
       Education:
-        avg_amount: 13333053.363636363
-        count: 11
-        median_amount: 9434121.0
-        total_amount: 146663587.0
+        avg_amount: 9240415.5
+        count: 4
+        median_amount: 9214659.0
+        total_amount: 36961662.0
       Gold:
-        avg_amount: 29081493.5
+        avg_amount: 5917115.0
         count: 2
-        median_amount: 29081493.5
-        total_amount: 58162987.0
+        median_amount: 5917115.0
+        total_amount: 11834230.0
       Home:
-        avg_amount: 11269376.666666666
-        count: 21
-        median_amount: 5964484.0
-        total_amount: 236656910.0
+        avg_amount: 9271764.608695652
+        count: 23
+        median_amount: 6523491.0
+        total_amount: 213250586.0
       MSME:
-        avg_amount: 12052357.357142856
-        count: 14
-        median_amount: 7075328.5
-        total_amount: 168733003.0
+        avg_amount: 11419858.857142856
+        count: 7
+        median_amount: 5126115.0
+        total_amount: 79939012.0
       Personal:
-        avg_amount: 12433449.07142857
+        avg_amount: 15635780.214285715
         count: 14
-        median_amount: 8099550.5
-        total_amount: 174068287.0
+        median_amount: 14244373.5
+        total_amount: 218900923.0
     monthly_trends:
       2023-05:
-        avg_amount: 8220085.0
+        avg_amount: 38542309.0
         count: 1
-        total_amount: 8220085.0
+        total_amount: 38542309.0
+      2023-06:
+        avg_amount: 18289494.0
+        count: 1
+        total_amount: 18289494.0
+      2023-07:
+        avg_amount: 6523491.0
+        count: 1
+        total_amount: 6523491.0
       2023-08:
-        avg_amount: 327607.0
+        avg_amount: 3363633.0
         count: 1
-        total_amount: 327607.0
+        total_amount: 3363633.0
       2023-09:
-        avg_amount: 10198974.5
-        count: 2
-        total_amount: 20397949.0
+        avg_amount: 4884484.0
+        count: 3
+        total_amount: 14653452.0
       2023-10:
-        avg_amount: 4673327.0
+        avg_amount: 985708.0
         count: 1
-        total_amount: 4673327.0
-      2024-02:
-        avg_amount: 15719237.67
-        count: 3
-        total_amount: 47157713.0
-      2024-03:
-        avg_amount: 24292349.0
-        count: 3
-        total_amount: 72877047.0
-      2024-04:
-        avg_amount: 19470909.0
-        count: 1
-        total_amount: 19470909.0
-      2024-05:
-        avg_amount: 7733914.0
-        count: 1
-        total_amount: 7733914.0
-      2024-07:
-        avg_amount: 15011917.5
+        total_amount: 985708.0
+      2023-12:
+        avg_amount: 11548214.0
         count: 2
-        total_amount: 30023835.0
-      2024-08:
-        avg_amount: 5380126.0
+        total_amount: 23096428.0
+      2024-04:
+        avg_amount: 17540465.0
         count: 1
-        total_amount: 5380126.0
+        total_amount: 17540465.0
+      2024-05:
+        avg_amount: 20939320.0
+        count: 1
+        total_amount: 20939320.0
       2024-09:
-        avg_amount: 2079712.0
+        avg_amount: 272416.0
         count: 1
-        total_amount: 2079712.0
+        total_amount: 272416.0
+      2024-11:
+        avg_amount: 8586159.5
+        count: 2
+        total_amount: 17172319.0
       2024-12:
-        avg_amount: 4900294.5
-        count: 4
-        total_amount: 19601178.0
+        avg_amount: 3604643.0
+        count: 1
+        total_amount: 3604643.0
   performance_metrics:
     amount_success_correlation:
       amount_quartile_metrics:
         Q1:
           amount_range:
-            max: 4673327.0
-            min: 327607.0
-          success_rate: 0.3125
-          total_applications: 16
+            max: 2942946.0
+            min: 272416.0
+          success_rate: 0.3076923076923077
+          total_applications: 13
         Q2:
           amount_range:
-            max: 7663863.0
-            min: 4808608.0
-          success_rate: 0.5
-          total_applications: 16
+            max: 8657376.0
+            min: 3071091.0
+          success_rate: 0.46153846153846156
+          total_applications: 13
         Q3:
           amount_range:
-            max: 15832986.0
-            min: 7733914.0
-          success_rate: 0.4666666666666667
-          total_applications: 15
+            max: 15899968.0
+            min: 9684341.0
+          success_rate: 0.6666666666666666
+          total_applications: 12
         Q4:
           amount_range:
-            max: 49942902.0
-            min: 16198637.0
-          success_rate: 0.4375
-          total_applications: 16
-      correlation_coefficient: 0.04541783397069003
+            max: 46689355.0
+            min: 16482253.0
+          success_rate: 0.46153846153846156
+          total_applications: 13
+      correlation_coefficient: 0.12837874840348187
     loan_type_metrics:
       Asset:
         approval_rate: 1.0
-        average_amount: 30443923.0
-        total_amount: 30443923.0
+        average_amount: 6711718.0
+        total_amount: 6711718.0
         total_applications: 1
       Education:
-        approval_rate: 0.5454545454545454
-        average_amount: 13333053.363636363
-        total_amount: 146663587.0
-        total_applications: 11
+        approval_rate: 1.0
+        average_amount: 9240415.5
+        total_amount: 36961662.0
+        total_applications: 4
       Gold:
-        approval_rate: 0.0
-        average_amount: 29081493.5
-        total_amount: 58162987.0
+        approval_rate: 0.5
+        average_amount: 5917115.0
+        total_amount: 11834230.0
         total_applications: 2
       Home:
-        approval_rate: 0.2857142857142857
-        average_amount: 11269376.666666666
-        total_amount: 236656910.0
-        total_applications: 21
+        approval_rate: 0.34782608695652173
+        average_amount: 9271764.608695652
+        total_amount: 213250586.0
+        total_applications: 23
       MSME:
-        approval_rate: 0.21428571428571427
-        average_amount: 12052357.357142856
-        total_amount: 168733003.0
-        total_applications: 14
+        approval_rate: 0.42857142857142855
+        average_amount: 11419858.857142856
+        total_amount: 79939012.0
+        total_applications: 7
       Personal:
-        approval_rate: 0.7857142857142857
-        average_amount: 12433449.07142857
-        total_amount: 174068287.0
+        approval_rate: 0.5
+        average_amount: 15635780.214285715
+        total_amount: 218900923.0
         total_applications: 14
     overall_metrics:
-      average_amount: 12932201.53968254
+      average_amount: 11129375.11764706
       status_distribution:
-        Approved: 0.42857142857142855
-        Closed: 0.09523809523809523
-        Defaulted (NPA): 0.015873015873015872
-        Inquired: 0.19047619047619047
-        Ongoing: 0.1111111111111111
-        Rejected: 0.15873015873015872
-      total_amount: 814728697.0
-      total_applications: 63
+        Approved: 0.47058823529411764
+        Closed: 0.11764705882352941
+        Inquired: 0.11764705882352941
+        Ongoing: 0.0784313725490196
+        Rejected: 0.21568627450980393
+      total_amount: 567598131.0
+      total_applications: 51
     temporal_patterns:
       2023-05:
+        approval_rate: 1.0
+        avg_amount: 38542309.0
+        total_amount: 38542309.0
+        total_applications: 1
+      2023-06:
+        approval_rate: 1.0
+        avg_amount: 18289494.0
+        total_amount: 18289494.0
+        total_applications: 1
+      2023-07:
         approval_rate: 0.0
-        avg_amount: 8220085.0
-        total_amount: 8220085.0
+        avg_amount: 6523491.0
+        total_amount: 6523491.0
         total_applications: 1
       2023-08:
-        approval_rate: 0.0
-        avg_amount: 327607.0
-        total_amount: 327607.0
+        approval_rate: 1.0
+        avg_amount: 3363633.0
+        total_amount: 3363633.0
         total_applications: 1
       2023-09:
         approval_rate: 0.0
-        avg_amount: 10198974.5
-        total_amount: 20397949.0
-        total_applications: 2
+        avg_amount: 4884484.0
+        total_amount: 14653452.0
+        total_applications: 3
       2023-10:
         approval_rate: 0.0
-        avg_amount: 4673327.0
-        total_amount: 4673327.0
+        avg_amount: 985708.0
+        total_amount: 985708.0
         total_applications: 1
-      2024-02:
-        approval_rate: 0.0
-        avg_amount: 15719237.666666666
-        total_amount: 47157713.0
-        total_applications: 3
-      2024-03:
-        approval_rate: 0.3333333333333333
-        avg_amount: 24292349.0
-        total_amount: 72877047.0
-        total_applications: 3
+      2023-12:
+        approval_rate: 0.5
+        avg_amount: 11548214.0
+        total_amount: 23096428.0
+        total_applications: 2
       2024-04:
         approval_rate: 1.0
-        avg_amount: 19470909.0
-        total_amount: 19470909.0
+        avg_amount: 17540465.0
+        total_amount: 17540465.0
         total_applications: 1
       2024-05:
         approval_rate: 1.0
-        avg_amount: 7733914.0
-        total_amount: 7733914.0
-        total_applications: 1
-      2024-07:
-        approval_rate: 1.0
-        avg_amount: 15011917.5
-        total_amount: 30023835.0
-        total_applications: 2
-      2024-08:
-        approval_rate: 1.0
-        avg_amount: 5380126.0
-        total_amount: 5380126.0
+        avg_amount: 20939320.0
+        total_amount: 20939320.0
         total_applications: 1
       2024-09:
         approval_rate: 0.0
-        avg_amount: 2079712.0
-        total_amount: 2079712.0
+        avg_amount: 272416.0
+        total_amount: 272416.0
         total_applications: 1
-      2024-12:
+      2024-11:
         approval_rate: 0.5
-        avg_amount: 4900294.5
-        total_amount: 19601178.0
-        total_applications: 4
+        avg_amount: 8586159.5
+        total_amount: 17172319.0
+        total_applications: 2
+      2024-12:
+        approval_rate: 1.0
+        avg_amount: 3604643.0
+        total_amount: 3604643.0
+        total_applications: 1
 market_analysis:
   growth_patterns:
     loan_type_growth:
@@ -263,92 +262,194 @@ market_analysis:
         approval_rate: 1.0
         share_change: 0.0
       Education:
-        approval_rate: 0.5454545454545454
+        approval_rate: 1.0
         share_change: 0.0
       Gold:
-        approval_rate: 0.0
+        approval_rate: 0.5
         share_change: 0.0
       Home:
-        approval_rate: 0.2857142857142857
+        approval_rate: 0.34782608695652173
         share_change: 0.0
       MSME:
-        approval_rate: 0.21428571428571427
+        approval_rate: 0.42857142857142855
         share_change: 0.0
       Personal:
-        approval_rate: 0.7857142857142857
+        approval_rate: 0.5
         share_change: 0.0
-    monthly_growth_rate: 3.0
+    monthly_growth_rate: -0.5
     segment_growth:
       Business Owner:
-        avg_loan_amount: 12595293.142857144
+        avg_loan_amount: 15130355.222222222
         share_change: 0.0
       Retired:
-        avg_loan_amount: 8247648.8
+        avg_loan_amount: 4644213.0
         share_change: 0.0
       Salaried:
-        avg_loan_amount: 14253086.787878787
+        avg_loan_amount: 9449258.1875
         share_change: 0.0
       Self-Employed:
-        avg_loan_amount: 9519133.2
+        avg_loan_amount: 8854775.6
         share_change: 0.0
       Student:
-        avg_loan_amount: 14972525.625
+        avg_loan_amount: 20032645.25
         share_change: 0.0
   market_size:
     current_metrics:
-      total_applications: 63
-      total_approved_value: 367388249.0
-      total_customers: 62
+      total_applications: 51
+      total_approved_value: 301166454.0
+      total_customers: 50
     recent_trends:
-      application_volume: 63
-      approval_rate: 0.42857142857142855
-      avg_ticket_size: 12932201.53968254
+      application_volume: 51
+      approval_rate: 0.47058823529411764
+      avg_ticket_size: 11129375.11764706
   risk_assessment:
     concentration_risk:
-      loan_type_concentration: 0.24162257495590825
-      occupation_concentration: 0.3343411438649534
+      loan_type_concentration: 0.3056516724336794
+      occupation_concentration: 0.4409842368319878
     rejection_analysis:
-      high_risk_segments:
-      - avg_income: 2012227.8
-        avg_loan_amount: 8247648.8
-        rejection_rate: 0.6
-        segment: Retired
-      overall_rejection_rate: 0.15873015873015872
+      high_risk_segments: [ ]
+      overall_rejection_rate: 0.21568627450980393
       rejection_by_loan_type:
         Asset: 0.0
-        Education: 0.09090909090909091
-        Gold: 1.0
-        Home: 0.19047619047619047
-        MSME: 0.21428571428571427
-        Personal: 0.0
-    volatility: 0.542940678618637
+        Education: 0.0
+        Gold: 0.5
+        Home: 0.30434782608695654
+        MSME: 0.14285714285714285
+        Personal: 0.14285714285714285
+    volatility: 0.47140452079103173
   segment_opportunities:
-    high_potential_segments: {}
+    high_potential_segments: { }
     segment_metrics:
       Business Owner:
-        approval_rate: 0.42857142857142855
-        avg_loan_amount: 12595293.142857144
-        potential_score: 0.41740632938223715
-        size: 7
+        approval_rate: 0.5555555555555556
+        avg_loan_amount: 15130355.222222222
+        potential_score: 0.755276267748956
+        size: 9
       Retired:
-        approval_rate: 0.4
-        avg_loan_amount: 8247648.8
-        potential_score: 0.2551042457756953
-        size: 5
+        approval_rate: 0.0
+        avg_loan_amount: 4644213.0
+        potential_score: 0.0
+        size: 1
       Salaried:
-        approval_rate: 0.3939393939393939
-        avg_loan_amount: 14253086.787878787
-        potential_score: 0.43417606458988006
-        size: 33
+        approval_rate: 0.4375
+        avg_loan_amount: 9449258.1875
+        potential_score: 0.3714539597534259
+        size: 32
       Self-Employed:
         approval_rate: 0.6
-        avg_loan_amount: 9519133.2
-        potential_score: 0.44164792069426756
-        size: 10
+        avg_loan_amount: 8854775.6
+        potential_score: 0.4773731951559227
+        size: 5
       Student:
-        approval_rate: 0.375
-        avg_loan_amount: 14972525.625
-        potential_score: 0.4341640587757829
-        size: 8
+        approval_rate: 0.5
+        avg_loan_amount: 20032645.25
+        potential_score: 0.8999896687027674
+        size: 4
 pincode: '110080'
-strategy: {}
+strategy:
+  channel_strategy:
+    - channel: Social Media (Facebook, Instagram)
+      cost_efficiency: High
+      expected_reach: 3000
+      implementation_timeline: 1 month
+      target_audience: Students
+    - channel: Community Events/Business Networking
+      cost_efficiency: Moderate
+      expected_reach: 1000
+      implementation_timeline: 2 months
+      target_audience: Business Owners and Self-Employed
+    - channel: Email Marketing
+      cost_efficiency: High
+      expected_reach: 2000
+      implementation_timeline: 1 month
+      target_audience: Existing Customers and Referrals
+  implementation_plan:
+    phases:
+      - duration: 1 month
+        expected_outcomes:
+          conversion: 0.05
+          reach: 4000
+        key_activities:
+          - Gather customer feedback
+          - Analyze competitors
+          - Develop marketing materials
+        phase: Market Research and Campaign Development
+      - duration: 2 months
+        expected_outcomes:
+          conversion: 0.07
+          reach: 5000
+        key_activities:
+          - Execute social media campaigns
+          - Host community events
+          - Send out email newsletters
+        phase: Launch Marketing Campaigns
+      - duration: Ongoing
+        expected_outcomes:
+          conversion: 0.1
+          reach: 6000
+        key_activities:
+          - Track performance metrics
+          - Solicit customer feedback
+          - Adjust strategy based on outcomes
+        phase: Monitor and Optimize Programs
+    success_metrics:
+      metric_name:
+        target: 200
+        timeline: 3 months
+  product_recommendations:
+    - optimal_pricing: 3-5% interest rates with flexible repayment options
+      product: Education Loan
+      target_segment: Student
+      unique_selling_points:
+        - No collateral required
+        - Flexible repayment schedule
+        - Coverage of all educational expenses
+    - optimal_pricing: 10-12% interest rates
+      product: Personal Loan
+      target_segment: Self-Employed
+      unique_selling_points:
+        - Quick approval process
+        - Flexible loan amounts
+        - Customized repayment plans
+    - optimal_pricing: 8-10% interest rates with potential subsidies
+      product: MSME Loan
+      target_segment: Business Owner
+      unique_selling_points:
+        - Support for business growth
+        - Low-interest options for expansion
+        - Tailored repayment terms based on cash flow
+  risk_mitigation:
+    - action_items:
+        - Analyze customer data to identify trends
+        - Increase marketing for less represented segments
+        - Develop targeted products for new market segments
+      mitigation_strategy: Diversify loan offerings across different segments
+      risk_type: Concentration Risk
+      severity: Moderate
+    - action_items:
+        - Implement pre-qualification tools for customers
+        - Provide educational content about synergies between application requirements
+          and loan approvals
+        - Regularly update training for loan officers on risk assessment
+      mitigation_strategy: Enhance customer eligibility checks and targeted communications
+      risk_type: Rejection Rate
+      severity: High
+  target_segments:
+    - expected_reach: 4000
+      marketing_approach: Targeted online campaigns focusing on education loans with
+        offers tailored to students
+      potential: High Potential
+      segment: Student
+      success_probability: 0.75
+    - expected_reach: 2000
+      marketing_approach: Networking events and seminars focusing on personal and MSME
+        loans for business expansion
+      potential: Moderate Potential
+      segment: Business Owner
+      success_probability: 0.65
+    - expected_reach: 1500
+      marketing_approach: Workshops to educate on personal financing options and loan
+        benefits
+      potential: Moderate Potential
+      segment: Self-Employed
+      success_probability: 0.6

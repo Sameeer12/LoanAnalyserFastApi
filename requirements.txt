@@ -1,25 +1,25 @@
 # Core dependencies
-pandas>=2.1.0           # Compatible with Python 3.12
-numpy>=1.25.0           # Compatible with Python 3.12
-python-dotenv==1.0.0    # Environment variable management
-pyyaml==6.0.1           # YAML parsing and serialization
-openai==1.55.3           # OpenAI API client
+pandas         # Compatible with Python 3.12
+numpy         # Compatible with Python 3.12
+python-dotenv    # Environment variable management
+pyyaml         # YAML parsing and serialization
+openai        # OpenAI API client
 
 # API and web
-fastapi==0.108.0        # Stable version for Python 3.12
-uvicorn==0.26.0         # Compatible ASGI server for FastAPI
-pydantic==2.4.2         # Stable version for Python 3.12
+fastapi       # Stable version for Python 3.12
+uvicorn      # Compatible ASGI server for FastAPI
+pydantic    # Stable version for Python 3.12
 
 # Data processing
-scikit-learn==1.3.1     # Compatible with Python 3.12
-python-dateutil==2.8.2  # Date and time handling
+scikit-learn     # Compatible with Python 3.12
+python-dateutil # Date and time handling
 
 # Development
-jupyter==1.0.0          # Interactive notebooks for development
-pytest==7.4.2           # Testing framework compatible with Python 3.12
-black==23.9.1           # Stable version for Python 3.12
-flake8==6.1.0           # Compatible code linting tool
+jupyter          # Interactive notebooks for development
+pytest          # Testing framework compatible with Python 3.12
+black         # Stable version for Python 3.12
+flake8        # Compatible code linting tool
 
 # Visualization
-plotly==5.17.0          # Data visualization library compatible with Python 3.12
-Faker==18.9.0
+plotly        # Data visualization library compatible with Python 3.12
+Faker

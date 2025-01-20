@@ -1,10 +1,9 @@
 # src/analysis/strategy_analyzer.py
-import pandas as pd
-import numpy as np
-from typing import Dict, List, Optional
-from datetime import datetime, timedelta
 import logging
-from collections import defaultdict
+from datetime import timedelta
+from typing import Dict, List
+
+import pandas as pd
 
 logger = logging.getLogger(__name__)
 

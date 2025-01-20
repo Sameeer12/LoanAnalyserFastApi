@@ -1,14 +1,13 @@
-import openai
 import json
-from typing import Dict
 import logging
 import os
+from typing import Dict
 
+import openai
 from dotenv import load_dotenv
 
 logger = logging.getLogger(__name__)
 logging.basicConfig(level=logging.INFO)
-
 
 dotenv_path = os.path.join(os.path.dirname(__file__), ".env")
 
@@ -21,6 +20,7 @@ else:
 # Access environment variables
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
+
 class OpenAIStrategyGenerator:
     def __init__(self):
         self.model = "gpt-4o-mini"
@@ -31,16 +31,18 @@ class OpenAIStrategyGenerator:
         try:
             print("open api key: {openai.api_key}")
             prompt = self._create_strategy_prompt(market_analysis, pincode)
-            response = await self._get_openai_response(prompt)
+            response = self._get_openai_response(prompt)
+            print("open ai response: {response}")
+            print(response)
             return self._process_strategy_response(response)
         except Exception as e:
             logger.error(f"Error generating strategy: {e}")
             return {}
 
-    async def _get_openai_response(self, prompt: str) -> str:
+    def _get_openai_response(self, prompt: str) -> str:
         """Get response from OpenAI API."""
         try:
-            response = await openai.chat.completions.create(
+            response = openai.chat.completions.create(
                 model=self.model,
                 messages=[
                     {
@@ -128,7 +130,8 @@ class OpenAIStrategyGenerator:
             return {}
 
         try:
-            strategy = json.loads(response)
+            cleaned_response = response.strip().replace("```json", "").replace("```", "")
+            strategy = json.loads(cleaned_response)
             self._validate_strategy(strategy)
             return strategy
         except json.JSONDecodeError as e:

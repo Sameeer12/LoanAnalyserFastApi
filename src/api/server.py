@@ -1,5 +1,7 @@
 import uvicorn
+
 from .routes import app, config
+
 
 def start_server():
     """Start the API server"""

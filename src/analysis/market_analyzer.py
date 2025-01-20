@@ -1,7 +1,8 @@
-import pandas as pd
-from typing import Dict, List
 import logging
-from datetime import datetime, timedelta
+from datetime import timedelta
+from typing import Dict, List
+
+import pandas as pd
 
 logger = logging.getLogger(__name__)
 
@@ -155,7 +156,7 @@ class MarketAnalyzer:
                     avg_amount = float(segment_data['applied_amount'].mean())
 
                     potential_score = approval_rate * (
-                                avg_amount / overall_mean_amount) if overall_mean_amount > 0 else 0.0
+                            avg_amount / overall_mean_amount) if overall_mean_amount > 0 else 0.0
 
                     segment_metrics[occupation] = {
                         'size': int(segment_size),

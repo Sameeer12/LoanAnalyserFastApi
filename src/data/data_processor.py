@@ -1,10 +1,8 @@
-import pandas as pd
-import numpy as np
-from typing import Dict, List, Optional, Union, Any
 import logging
-from datetime import datetime, timedelta
 from dataclasses import dataclass
-from functools import lru_cache
+from typing import Dict
+
+import pandas as pd
 
 # Configure logging with more detailed format
 logging.basicConfig(

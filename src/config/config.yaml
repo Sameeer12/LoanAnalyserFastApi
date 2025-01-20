@@ -109,11 +109,11 @@ api:
   host: "0.0.0.0"
   port: 8000
   debug: true
-  cors_origins: ["*"]
+  cors_origins: [ "*" ]
   rate_limit: 100
   timeout_seconds: 30
 
-# .env
+# #.env
 #OPENAI_API_KEY=your-api-key-here
 #ENVIRONMENT=development
 #LOG_LEVEL=INFO

@@ -1,11 +1,11 @@
 import logging
-from faker import Faker
 import random
-import pandas as pd
-from typing import Dict, List, Optional, Set
 from datetime import datetime, timedelta
-import numpy as np
 from pathlib import Path
+from typing import Dict, Set
+
+import pandas as pd
+from faker import Faker
 
 # Configure logging
 logging.basicConfig(

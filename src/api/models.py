@@ -1,10 +1,13 @@
 # src/api/models.py
-from pydantic import BaseModel
 from typing import List, Dict, Optional
+
+from pydantic import BaseModel
+
 
 class PincodeRequest(BaseModel):
     pincode: str
     include_historical: bool = False
+
 
 class LoanApplication(BaseModel):
     application_id: str
@@ -17,9 +20,11 @@ class LoanApplication(BaseModel):
     occupation: str
     status: str
 
+
 class AnalysisRequest(BaseModel):
     loan_data: List[LoanApplication]
     pincodes: Optional[List[str]] = None
+
 
 class StrategyResponse(BaseModel):
     pincode: str
